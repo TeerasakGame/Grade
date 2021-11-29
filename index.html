@@ -6,17 +6,27 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <script>
         $(document).ready(function () {
-            $("#word").keyup(function () {
+            $("#word").keyup(function (e) {
                 var word = $("#word").val();
                 var num = word.length;
                 var num2 = num * 0.01;
                 var sum = 4.00 - num2;
                 $(".grade").html(sum.toFixed(2));
                 console.log(sum.toFixed(2));
+                if (e.keyCode == 13) {
+                  //  alert('aaaa');
+                    $(".grade").html('4.00');
+                    $("#word").val('');
+                }
             });
 
             $(".reset").click(function () {
                 $(".grade").html('4.00');
+            });
+
+            $(".submit").submit(function () {
+                $(".grade").html('4.00');
+                 $("#word").val('');
             });
         });
     </script>
@@ -33,7 +43,8 @@
                </div>
                
                <div class="form-group text-right">
-                    <button type="reset" value="Reset" class="btn btn-light reset">Reset</button>
+                    <button type="submit" class="btn btn-success submit">Submit</button>
+                    <!-- <button type="reset" value="Reset" class="btn btn-light reset">Reset</button> -->
                </div>
            </form>
        </div>
