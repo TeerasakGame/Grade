@@ -4,16 +4,37 @@
 <head>
     <script src="jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <BGSOUND SRC="jpg/FullSizeRender.mp3" LOOP="Infinite"></BGSOUND>
     <style>
         img.animated-gif{
             width: 100%;
             height: auto;
         }
     </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            new Audio('jpg/FullSizeRender.mp3').play();
+        };
+    </script>
+
+    <!-- <script>
+        $(document).ready(function () {
+
+        });
+    </script> -->
 </head>
 
 <body>
-    <img class="animated-gif" src="jpg/IMG_5394.PNG">
+    <!-- <iframe src="jpg/FullSizeRender.mp3" allow="autoplay" id="audioID" loop="Infinite"></iframe> -->
+    <!-- <bgsound src="่jpg/FullSizeRender.mp3" loop="Infinite"></bgsound> -->
+    <!-- <audio controls autoplay id="audioID" loop>
+        <source src="jpg/FullSizeRender.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio> -->
+
+    <!-- <iframe src="jpg/FullSizeRender.mp3" allow="autoplay"  id="iframeAudio">
+</iframe>  -->
+    <img class="animated-gif" src="jpg/IMG_5394.PNG" loop="infinite">
 </body>
 
 </html>
