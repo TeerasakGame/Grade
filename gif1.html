@@ -11,30 +11,36 @@
             height: auto;
         }
     </style>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.onload = function () {
             new Audio('jpg/FullSizeRender.mp3').play();
         };
-    </script>
+    </script> -->
 
     <!-- <script>
         $(document).ready(function () {
-
+            $('#test').click(function() {
+                const audio = new Audio("jpg/FullSizeRender.mp3" );
+                audio.play();
+            });
         });
     </script> -->
 </head>
 
+
+
 <body>
     <!-- <iframe src="jpg/FullSizeRender.mp3" allow="autoplay" id="audioID" loop="Infinite"></iframe> -->
     <!-- <bgsound src="่jpg/FullSizeRender.mp3" loop="Infinite"></bgsound> -->
-    <!-- <audio controls autoplay id="audioID" loop>
+    <!-- <audio controls  id="audioID" loop>
         <source src="jpg/FullSizeRender.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-    </audio> -->
+    </audio>
+    <button id="test">play</button> -->
 
     <!-- <iframe src="jpg/FullSizeRender.mp3" allow="autoplay"  id="iframeAudio">
 </iframe>  -->
-    <img class="animated-gif" src="jpg/IMG_5394.PNG" loop="infinite">
+    <img class="animated-gif" src="jpg/IMG_5721.GIF" loop="infinite">
 </body>
 
 </html>
